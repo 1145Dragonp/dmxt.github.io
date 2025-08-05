@@ -55,6 +55,7 @@ body{background:#fff;display:flex;flex-direction:column;align-items:center;justi
     <button id="authorBtn">作者</button>
     <button id="sourceBtn">源码</button>
     <button id="settingsBtn">设置</button>
+    <button id="dowonBtn">下载</button>
 </div>
 <div id="overlay"></div>
 
@@ -116,6 +117,7 @@ overlay.addEventListener('click',()=>toggleSidebar(false));
 
 document.getElementById('authorBtn').addEventListener('click',()=>window.open('https://b23.tv/mttsnH7','_blank'));
 document.getElementById('sourceBtn').addEventListener('click',()=>window.open('https://github.com/1145Dragonp/dmxt.github.io/'));
+document.getElementById('downBtn').addEventListener('click',()=>window.open('https://github.com/1145Dragonp/dmxt.github.io/'));    
 document.getElementById('settingsBtn').addEventListener('click',()=>{
     const max=prompt('请输入最大数字（默认50）',localStorage.max||50);
     if(max && !isNaN(max)){localStorage.max=max; renderGrid(parseInt(max));}
